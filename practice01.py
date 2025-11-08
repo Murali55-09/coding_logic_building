@@ -27,3 +27,11 @@ if(num % 5 == 0):
 else:
     print("Number is not divisible by 5")
 
+#Check if a number is divisible by both 3 and 5.
+num = 15
+if(num % 3 == 0 and num % 5 == 0):
+    print("Number is dividsible by both 3 and 5") 
+
+else:
+    print("Number is not divisible by both 3 and 5")
+
