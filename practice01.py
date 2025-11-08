@@ -19,3 +19,11 @@ if(num %2 == 0):
 else:
     print("Number is Odd")
 
+#Check if a number is divisible by 5. 
+num = 15
+if(num % 5 == 0):
+    print("Number is divisible by 5")
+
+else:
+    print("Number is not divisible by 5")
+
