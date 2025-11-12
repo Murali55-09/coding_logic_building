@@ -2,12 +2,12 @@
 from typing import List
 class Solution:
     def hasDuplicates(self,nums: List[int] )-> bool:
-        seen = set()
+        seen = set()        #hashset creation
         for num in nums:
             if num in nums:
-                return True
+                return True     #if element is already present then returns true
             else:
-                seen.add(n)
+                seen.add(n)     #adding elements to the hashset
         return False
 
 nums = [3, 4, 1, 5, 2, 2, 3]
@@ -15,8 +15,8 @@ res = Solution()
 print(res.hasDuplicates(nums))
 
 """Learnings:
-from typing , import List	Enables type hint for list
-List[int], Means list containing integers
+from typing import -- List	Enables type hint for list
+List[int]-- Means list containing integers
 -> bool	Means function returns a boolean value
 A type hint in Python tells you (and your tools) what type of data a variable, parameter, or return value should have."""
         
