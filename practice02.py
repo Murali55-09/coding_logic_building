@@ -81,7 +81,7 @@ else:
 
 
 #Take a day number (1–7) and print the corresponding day name. 
-""" switch statements"""
+""" switch statements : we use match instead of switch """
 
 day_number = 7
 

@@ -25,7 +25,7 @@ class Solution:
 
 res = Solution()        #object creation
 a = "mrk"
-b ="mr"
+b ="krm"
 print(res.anagram(a, b))
 
 

@@ -4,13 +4,13 @@ class Solution:
     def hasDuplicates(self,nums: List[int] )-> bool:
         seen = set()        #hashset creation
         for num in nums:
-            if num in nums:
+            if num in seen:
                 return True     #if element is already present then returns true
             else:
-                seen.add(n)     #adding elements to the hashset
+                seen.add(num)     #adding elements to the hashset
         return False
 
-nums = [3, 4, 1, 5, 2, 2, 3]
+nums = [3, 4, 1, 5, 2]
 res = Solution()
 print(res.hasDuplicates(nums))
 
