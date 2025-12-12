@@ -31,7 +31,7 @@ int main(){
     int d = 3;
 
     //reversing the first d elements
-    reverse(arr, 0, d-1);
+    reverse(arr, 0, d-1);  // we are passing the refernce of the array to the function not a copy
 
     //reversing the last n-d elements
     reverse(arr, d, n-1);
