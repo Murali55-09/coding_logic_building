@@ -1,8 +1,6 @@
 // Given an array of positive integers arr[] of size n, the task is to find second largest distinct element in the array.
 
 #include<stdio.h>
-
-
 void main(){
     int arr[] = {1, 3, 4, 1, 6, 8, 3, 1};
     int N  = sizeof(arr)/sizeof(arr[0]);
@@ -36,5 +34,5 @@ void main(){
     else{
         printf("%d is the second Largest Number\n", second_large);
         printf("%d is the third Largest Number", third_large);
-    }
+    } 
 }
