@@ -28,3 +28,24 @@ def nextPermutation(arr):
 # Example
 arr = [2, 4, 5, 9, 8, 7]
 print(nextPermutation(arr))   # Output: [2, 4, 7, 5, 8, 9]
+ 
+
+
+
+ ## Works only on lists
+# ✔ Reverses the list in place (modifies the original list)
+# ✔ Returns None
+
+
+# ✔ Works on any iterable (list, tuple, string, etc.)
+# ✔ Does NOT modify the original object
+# ✔ Returns an iterator (not a list)
+# ✔ Must be converted to a list or assigned using slicing
+
+# arr = [1, 2, 3]
+# x = reversed(arr)
+
+# print(list(x))  # [3, 2, 1]
+# print(arr) 
+# print(list(x)) --> gives []  Because x = reversed(arr) creates an iterator, and an iterator can be used only once.
+# print(x) --> gives error This is because x is an iterator, not a list.
