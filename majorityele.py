@@ -1,6 +1,6 @@
 # Given an array arr[] consisting of n integers, find all the array elements which occurs more than floor(n/3) times.
 # Note: The returned array of majority elements should be sorted.
-
+#
 # Boyer-Moore’s Voting Algorithm
 # steps:
 # 1> initialise the ele1, ele2 = 0,  and cnt1, cnt2 = 0
