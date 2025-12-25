@@ -12,9 +12,24 @@ else:
     print("Digits are not distinct")
 
 
+# 2. Take a 3-digit number and determine if the middle digit is the largest, smallest, or neither. 
+
+num = int(input("Enter a 3-digit number: "))
+
+a = num // 100
+b = (num // 10) % 10
+c = num % 10
+
+if b > a and b > c:
+    print("Middle digit is the largest")
+elif b < a and b < c:
+    print("Middle digit is the smallest")
+else:
+    print("Middle digit is neither largest nor smallest")
 
 
-# 2. Take a 3-digit number and determine if the middle digit is the largest, smallest, or 
-# neither. 
+
+
+
 # 3. Take a 4-digit number and check if the first and last digits are equal. 
 # 4. Check whether a given integer is single-digit, double-digit, or multi-digit.
