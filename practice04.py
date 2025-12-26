@@ -85,3 +85,15 @@ elif x == 0:
 elif y == 0:
     print("Point lies on X-axis")
 
+
+# Check if an amount can be evenly divided into 2000
+num = int(input("Enter a number: "))
+
+if 100 <= num <= 999:
+    print("The number lies within the range 100 to 999")
+else:
+    print("The number does NOT lie within the range 100 to 999")
+
+
+
+
