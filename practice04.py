@@ -54,3 +54,15 @@ elif num < 100:
     print("Double-digit number")
 else:
     print("Multi-digit number")
+
+
+# Check if a number is a multiple of 7 or ends with 7. 
+num = int(input("Enter a number: "))
+
+if num % 7 == 0 or num % 10 == 7:
+    print("The number is a multiple of 7 or ends with 7")
+else:
+    print("The number is NOT a multiple of 7 and does NOT end with 7")
+
+
+
