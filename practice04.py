@@ -66,3 +66,22 @@ else:
 
 
 
+# Determine the quadrant of a point (x, y)
+x = int(input("Enter x coordinate: "))
+y = int(input("Enter y coordinate: "))
+
+if x > 0 and y > 0:
+    print("Point lies in First Quadrant")
+elif x < 0 and y > 0:
+    print("Point lies in Second Quadrant")
+elif x < 0 and y < 0:
+    print("Point lies in Third Quadrant")
+elif x > 0 and y < 0:
+    print("Point lies in Fourth Quadrant")
+elif x == 0 and y == 0:
+    print("Point lies at the Origin")
+elif x == 0:
+    print("Point lies on Y-axis")
+elif y == 0:
+    print("Point lies on X-axis")
+
