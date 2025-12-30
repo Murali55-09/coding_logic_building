@@ -2,8 +2,8 @@
 
 num = int(input("Enter a 3-digit number: "))
 
-a = num // 100      
-b = (num // 10) % 10     
+a = num // 100     ## // gives integer --> 55 // 10 --> 5  
+b = (num // 10) % 10     ## % gives remainder
 c = num % 10             
 
 if a != b and b != c and a != c:
@@ -87,13 +87,26 @@ elif y == 0:
 
 
 # Check if an amount can be evenly divided into 2000
-num = int(input("Enter a number: "))
+def get_note_breakdown(amount):
+    # Base condition: The smallest note is 100
+    if amount % 100 != 0:
+        print(f"Error: {amount} is not divisible by 100.")
+        return
 
-if 100 <= num <= 999:
-    print("The number lies within the range 100 to 999")
-else:
-    print("The number does NOT lie within the range 100 to 999")
+    notes = [2000, 500, 100]
+    print(f"Breakdown for {amount}:")
 
+    for note in notes:
+        # Calculate how many notes of this type
+        count = amount // note      ## count: 600 / 2000 --> 0, 600 / 500 --> 1, 100 / 100 --> 1
+        
+        # Calculate what is left over
+        amount = amount % note      ## amount: amount % 2000 --> 600, 600 % 500 --> 100, 100 % 100 --> 0
+        
+        print(f"{note} Notes: {count}")
+
+# Test the function
+get_note_breakdown(600)
 
 
 
