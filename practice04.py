@@ -86,7 +86,7 @@ elif y == 0:
     print("Point lies on X-axis")
 
 
-# Check if an amount can be evenly divided into 2000
+# Check if an amount can be evenly divided into 2000, 500, 100
 def get_note_breakdown(amount):
     # Base condition: The smallest note is 100
     if amount % 100 != 0:
