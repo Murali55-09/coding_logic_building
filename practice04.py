@@ -108,5 +108,15 @@ def get_note_breakdown(amount):
 # Test the function
 get_note_breakdown(600)
 
+# Take two angles of a triangle and compute the third angle. 
+a = float(input("Enter first angle: "))
+b = float(input("Enter second angle: "))
+
+c = 180 - (a + b)
+
+if c > 0:
+    print("The third angle is:", c)
+else:
+    print("Invalid angles for a triangle")
 
 
