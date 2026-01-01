@@ -120,3 +120,15 @@ else:
     print("Invalid angles for a triangle")
 
 
+# Check whether a number is a perfect square (without using the square root function). 
+
+n = int(input("Enter a number: "))
+
+i = 1
+while i * i <= n:
+    if i * i == n:
+        print("Perfect square")
+        break
+    i += 1
+else:
+    print("Not a perfect square")
