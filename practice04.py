@@ -8,6 +8,19 @@ if 'a' <= ch <= 'z' or 'A' <= ch <= 'Z':
 elif '0' <= ch <= '9':
     print(f"Digit is", ch)
 
+
+# logic for the given character not a letter and digit
+def chacheck(chart):
+    if('a' <= chart <= 'z' or 'A' <= chart <= 'Z' or '0' <= chart <= '9'):
+        return False
+
+    else:
+        return True
+
+chart = input("Enter the Character")
+print(chacheck(chart))
+
+
 # Learning: All comparisons are numeric.
 # Characters are compared using ASCII/Unicode values.
 # C allows implicit conversion, Python does not.
