@@ -1,6 +1,6 @@
 # Take a character and check if it is a letter, a digit, or neither.
 
-ch = 'a'
+ch = '34'
 
 if 'a' <= ch <= 'z' or 'A' <= ch <= 'Z':
     print(f"Letter is", ch)
