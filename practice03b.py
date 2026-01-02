@@ -1,0 +1,134 @@
+# Take a 3-digit number and check if all digits are distinct. 
+
+num = int(input("Enter a 3-digit number: "))
+
+a = num // 100     ## // gives integer --> 55 // 10 --> 5  
+b = (num // 10) % 10     ## % gives remainder
+c = num % 10             
+
+if a != b and b != c and a != c:
+    print("All digits are distinct")
+else:
+    print("Digits are not distinct")
+
+
+# 2. Take a 3-digit number and determine if the middle digit is the largest, smallest, or neither. 
+
+num = int(input("Enter a 3-digit number: "))
+
+a = num // 100
+b = (num // 10) % 10
+c = num % 10
+
+if b > a and b > c:
+    print("Middle digit is the largest")
+elif b < a and b < c:
+    print("Middle digit is the smallest")
+else:
+    print("Middle digit is neither largest nor smallest")
+
+
+
+# 3. Take a 4-digit number and check if the first and last digits are equal. 
+
+
+num = int(input("Enter a 4-digit number: "))
+
+first = num // 1000
+last = num % 10
+
+if first == last:
+    print("First and last digits are equal")
+else:
+    print("First and last digits are not equal")
+
+# 4. Check whether a given integer is single-digit, double-digit, or multi-digit.
+
+num = int(input("Enter an integer: "))
+
+num = abs(num)  # handle negative numbers
+
+if num < 10:
+    print("Single-digit number")
+elif num < 100:
+    print("Double-digit number")
+else:
+    print("Multi-digit number")
+
+
+# Check if a number is a multiple of 7 or ends with 7. 
+num = int(input("Enter a number: "))
+
+if num % 7 == 0 or num % 10 == 7:
+    print("The number is a multiple of 7 or ends with 7")
+else:
+    print("The number is NOT a multiple of 7 and does NOT end with 7")
+
+
+
+# Determine the quadrant of a point (x, y)
+x = int(input("Enter x coordinate: "))
+y = int(input("Enter y coordinate: "))
+
+if x > 0 and y > 0:
+    print("Point lies in First Quadrant")
+elif x < 0 and y > 0:
+    print("Point lies in Second Quadrant")
+elif x < 0 and y < 0:
+    print("Point lies in Third Quadrant")
+elif x > 0 and y < 0:
+    print("Point lies in Fourth Quadrant")
+elif x == 0 and y == 0:
+    print("Point lies at the Origin")
+elif x == 0:
+    print("Point lies on Y-axis")
+elif y == 0:
+    print("Point lies on X-axis")
+
+
+# Check if an amount can be evenly divided into 2000, 500, 100
+def get_note_breakdown(amount):
+    # Base condition: The smallest note is 100
+    if amount % 100 != 0:
+        print(f"Error: {amount} is not divisible by 100.")
+        return
+
+    notes = [2000, 500, 100]
+    print(f"Breakdown for {amount}:")
+
+    for note in notes:
+        # Calculate how many notes of this type
+        count = amount // note      ## count: 600 / 2000 --> 0, 600 / 500 --> 1, 100 / 100 --> 1
+        
+        # Calculate what is left over
+        amount = amount % note      ## amount: amount % 2000 --> 600, 600 % 500 --> 100, 100 % 100 --> 0
+        
+        print(f"{note} Notes: {count}")
+
+# Test the function
+get_note_breakdown(600)
+
+# Take two angles of a triangle and compute the third angle. 
+a = float(input("Enter first angle: "))
+b = float(input("Enter second angle: "))
+
+c = 180 - (a + b)
+
+if c > 0:
+    print("The third angle is:", c)
+else:
+    print("Invalid angles for a triangle")
+
+
+# Check whether a number is a perfect square (without using the square root function). 
+
+n = int(input("Enter a number: "))
+
+i = 1
+while i * i <= n:
+    if i * i == n:
+        print("Perfect square")
+        break
+    i += 1
+else:
+    print("Not a perfect square")
