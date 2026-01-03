@@ -36,3 +36,20 @@ num = int(input("Enter the number"))
 
 result = "FizzBuzz" if num % 3 == 0 and num % 5 == 0 else "Fizz" if num % 3 == 0 else "Buzz" if num % 5 == 0 else "Not Divisible By 3 or 5"
 print(result)
+
+# Take three numbers and print the median value (neither maximum nor minimum).
+
+num1 = 4
+num2 = 5
+num3 = 3
+
+if (num1 < num2 and num1 > num3) or (num1 > num2 and num1 < num3 ):
+    print(f"Median =", num1)
+
+elif (num2 > num1 and num2 < num3) or (num2 <num1 and num2 > num3):
+    print(f"Median is", num2)
+
+else:
+    print(f"Median is", num3)
+
+
