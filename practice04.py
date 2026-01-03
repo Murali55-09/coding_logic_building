@@ -19,8 +19,6 @@ def chacheck(chart):
 
 chart = input("Enter the Character")
 print(chacheck(chart))
-
-
 # Learning: All comparisons are numeric.
 # Characters are compared using ASCII/Unicode values.
 # C allows implicit conversion, Python does not.
@@ -29,3 +27,12 @@ print(chacheck(chart))
 # Built-ins handle Unicode, not ideal for systems/DSA
 # Letters & digits occupy fixed ASCII ranges
 # Unicode characters will fail ASCII-based checks
+
+
+# Take a number and print “Fizz” if divisible by 3, “Buzz” if divisible by 5, and 
+# “FizzBuzz” if divisible by both.
+
+num = int(input("Enter the number"))
+
+result = "FizzBuzz" if num % 3 == 0 and num % 5 == 0 else "Fizz" if num % 3 == 0 else "Buzz" if num % 5 == 0 else "Not Divisible By 3 or 5"
+print(result)
