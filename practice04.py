@@ -61,3 +61,15 @@ if(12 <= a ):
 
 else:
     print("AM")
+
+
+# Take income and age, and check if eligible for tax (age > 18 and income > 5 L). 
+ 
+income = 40000
+age = 35
+
+if (age > 18 and income > 500000):
+    print("Eligible for tax")
+
+else:
+    print("Not eligible")
