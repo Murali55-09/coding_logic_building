@@ -73,3 +73,7 @@ if (age > 18 and income > 500000):
 
 else:
     print("Not eligible")
+
+
+# Take two numbers and check if both are positive and their sum is less than 100
+    # logic: positive -- num < 0, sum is less than 100 -- num1 + num2 , 100
