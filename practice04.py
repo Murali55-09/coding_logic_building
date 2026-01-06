@@ -77,3 +77,26 @@ else:
 
 # Take two numbers and check if both are positive and their sum is less than 100
     # logic: positive -- num < 0, sum is less than 100 -- num1 + num2 , 100
+
+
+# Take a single digit (0–9) and print its word form (“Zero” to “Nine”).
+    # logic: match  its like switch,.. or using dict
+
+digit = 3
+
+digit_words = {
+    '0': 'zero',
+    '1': "One",
+    '2': "Two",
+    '3': "Three",
+    '4': "Four",
+    '5': "Five",
+    '6': "Six",
+    '7': "Seven",
+    '8': "Eight",
+    '9': "Nine"
+}
+if(0 <= digit < 8):
+    print(digit_words[digit])
+else:
+    print("Give number betwen 0 -7")
