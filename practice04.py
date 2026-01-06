@@ -52,4 +52,12 @@ elif (num2 > num1 and num2 < num3) or (num2 <num1 and num2 > num3):
 else:
     print(f"Median is", num3)
 
+# Take 24-hour time (hours and minutes) and print whether it is AM or PM
 
+a = int(input("Enter the time "))
+
+if(12 <= a ):
+    print("PM")
+
+else:
+    print("AM")
