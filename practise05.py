@@ -10,3 +10,14 @@ elif(y == 0):
     print("X-axis")
 else:
     print("Point lies neither on X-axis nor Y-axis")
+
+# . Take three numbers and check if they can form a Pythagorean triplet 
+# pythagoras triplet means a^2 + b^2 = c^2 (s a set of three positive integers a, b, and c, that satisfy the Pythagorean theorem:)
+
+a = 3
+b = 11
+c = 5
+if(a**2 + b**2 == c**2 or b**2 + c**2 == a**2 or c**2 + a**2 == b**2):
+    print("They form a Pythagorean triplet")
+else:
+    print("They do not form a Pythagorean triplet")
