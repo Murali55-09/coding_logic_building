@@ -39,3 +39,13 @@ angle_diff = abs(hour_angle - minute_angle)
 smaller_angle = min(angle_diff, 360 - angle_diff)
 
 print(f"The smaller angle between the hour and minute hands is: {smaller_angle} degrees")
+
+
+# Take three numbers and check if they are in arithmetic progression.
+num1 = 5
+num2 = 10
+num3 = 15
+if(num2 - num1 == num3 - num2):
+    print("The numbers are in arithmetic progression")
+else:
+    print("The numbers are not in arithmetic progression")
