@@ -49,3 +49,12 @@ if(num2 - num1 == num3 - num2):
     print("The numbers are in arithmetic progression")
 else:
     print("The numbers are not in arithmetic progression")
+
+# Take three numbers and check if they are in geometric progression.
+num1 = 2
+num2 = 6
+num3 = 18   
+if(num2/num1 == num3/num2):
+    print("The numbers are in geometric progression")
+else:
+    print("The numbers are not in geometric progression")
