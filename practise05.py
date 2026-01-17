@@ -58,3 +58,14 @@ if(num2/num1 == num3/num2):
     print("The numbers are in geometric progression")
 else:
     print("The numbers are not in geometric progression")
+
+# Take a 3-digit number and check if the sum of the first and last digit equals the middle digit. 
+number = 123
+first_digit = number // 100
+last_digit = number % 10
+middle_digit = (number // 10) % 10
+
+if(first_digit + last_digit == middle_digit):
+    print("The sum of the first and last digit equals the middle digit.")
+else:
+    print("The sum of the first and last digit does not equal the middle digit.")
