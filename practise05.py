@@ -69,3 +69,20 @@ if(first_digit + last_digit == middle_digit):
     print("The sum of the first and last digit equals the middle digit.")
 else:
     print("The sum of the first and last digit does not equal the middle digit.")
+
+
+
+# Take an integer (1–9999) and check if the sum of its digits is greater than the product of its digits.
+number = 2345
+sum_of_digits = 0   
+product_of_digits = 1
+temp = number
+while temp > 0:
+    digit = temp % 10
+    sum_of_digits += digit
+    product_of_digits *= digit
+    temp //= 10
+if(sum_of_digits > product_of_digits):
+    print("The sum of the digits is greater than the product of the digits.")   
+else:
+    print("The sum of the digits is not greater than the product of the digits.")
