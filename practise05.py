@@ -86,3 +86,22 @@ if(sum_of_digits > product_of_digits):
     print("The sum of the digits is greater than the product of the digits.")   
 else:
     print("The sum of the digits is not greater than the product of the digits.")
+
+
+# Take two dates (day and month) and determine which one comes first in the calendar. 
+date1_day = 15
+date1_month = 3
+date2_day = 20
+date2_month = 2
+
+if date1_month < date2_month:
+    print("Date 1 comes first.")
+elif date1_month > date2_month:
+    print("Date 2 comes first.")
+else:
+    if date1_day < date2_day:
+        print("Date 1 comes first.")
+    elif date1_day > date2_day:
+        print("Date 2 comes first.")
+    else:
+        print("Both dates are the same.")
