@@ -105,3 +105,16 @@ else:
         print("Date 2 comes first.")
     else:
         print("Both dates are the same.")
+
+# Take a year and print the corresponding century (e.g., “19th century”, “20th century”) 
+year = 2024
+century = (year - 1) // 100 + 1     
+if century % 10 == 1 and century % 100 != 11:
+    suffix = "st"
+elif century % 10 == 2 and century % 100 != 12:
+    suffix = "nd"
+elif century % 10 == 3 and century % 100 != 13:
+    suffix = "rd"
+else:
+    suffix = "th"   
+print(f"{century}{suffix} century")
