@@ -7,3 +7,8 @@ for i in range(1, 11):
 n = 10
 sum_natural = sum(range(1, n + 1))
 print(f"The sum of the first {n} natural numbers is: {sum_natural}")
+
+# Print the sum of all even numbers up to n. 
+n = 20
+sum_even = sum(i for i in range(2, n + 1, 2))
+print(f"The sum of all even numbers up to {n} is: {sum_even}")
